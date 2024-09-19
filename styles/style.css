@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --gray: #E5E5E5;
+    --red: #DE2D2D;
+    --white: #fff;
+    --darkgray: #333333;
+    --green: #64C3A3;
+    --black: #000000;
+    --font: "Open Sans";
+    --radius1: 50%;
+    --radius2:12px;
+}
+html{
+    font-size: 85%;
+}
+body{
+    padding: 3rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: var(--font);
+    max-width: 70rem;
+    margin: auto;
+
+}
+footer{
+    background-color: var(--darkgray);
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    height: 10vh;
+}
+img{
+    border-radius: var(--radius1)
+}
+.menuImg{
+    width: 2rem;
+}
+.mainImg{
+    width: 29rem;
+    height: 29rem;
+  object-fit: cover;
+position:absolute;
+top: 8rem;
+left: 2rem;
+z-index: 2;
+}
+.secondImg{
+    position: inherit;
+    width: 15rem;
+    height: 15rem;
+    border: 1rem solid var(--white);
+    z-index: 3;
+  top: 30rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+article{
+    background-color: var(--gray);
+    justify-content: center;
+    align-items: flex-start;
+    width: 34rem;
+    height: 34rem;
+    padding-right: 2rem;
+    padding-left: 7rem;
+    box-sizing: border-box;
+}
+button{
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: var(--radius2);
+    width: 17rem;
+    height: 3rem;
+    border: var(--red);
+}
+article, footer{
+    display: flex;
+    flex-direction: column;
+}
+footer a:active{
+    color: var(--green)
+}
+footer a:link{
+    color: var(--green)
+}
+footer a:visited{
+    color: var(--green)
+}
+footer a:hover{
+    color: var(--green)
+}
+p>span{
+    text-decoration: underline;
+}
+.logo{
+    width: 8rem;
+}
+figure{width: 10rem;
+height: 4rem;
+display: flex;
+justify-content: center;
+align-items: center;}
+.red, .striped{
+    background-color: var(--red);
+    width: 15rem;
+    height: 15rem;
+    border-radius: var(--radius1);
+}
+.red{
+    left: 52rem;
+    top: 4rem;
+}
+.striped{
+    background: repeating-linear-gradient(
+        45deg,
+        var(--white),
+       var(--red) 10px,
+       var(--white) 20px,
+       var(--red) 20px);
+       top: 43rem;
+       left: 10rem;
+}
+.relativePos{
+    height: 80vh;
+    position: relative;
+}
+.absolutePos{
+    position: absolute;
+}
+
+.textBox{
+    top: 11rem;
+    left: 25rem;
+    z-index: 1;
+}
